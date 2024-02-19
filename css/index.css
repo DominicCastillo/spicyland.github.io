@@ -1,0 +1,490 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+  }
+
+p{
+    font-size: 18px;
+}
+
+/* Estilos para el encabezado */
+
+header {
+    position: fixed !important;
+    background-color: #fff !important;
+    width: 100% !important;
+    padding: 20px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    z-index: 1000;
+}
+
+
+.header-items {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para sección de inicio */
+
+.inicio{
+    width:100%;
+    height: 90vh;
+    column-count: 2;
+    text-align: justify;
+    display: inline-block;
+    background-color: #EEEEEE;
+}
+
+.inicio .texto{
+    display: inline-block;
+    align-items: center;
+    margin-top: 230px;
+    margin-left: 100px;
+    width: 90%;
+}
+
+.inicio .texto h2{
+    font-size: 40px;
+    margin-bottom: 13px;
+}
+
+.inicio img{
+    border-radius: 400px;
+    background-color: #921E13;
+    width: 400px;
+    height: auto;
+    margin-right: 100px;
+}
+
+/* Estilos para sección de historia*/
+
+.historia{
+    margin: 50px 0 50px 10px;
+}
+
+.historia .contenido-historia{
+    column-count: 2;
+    text-align: justify;
+}
+
+.historia h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.historia h3{
+    text-align: center;
+    color:#3d3b3b;
+    font-family:"Segoe UI" ;
+    margin-bottom: 25px;
+}
+
+.historia p{
+    width: 100%;
+    font-size: 18px;
+}
+
+.historia .contenido-historia img{
+    align-content: center;
+    margin-left: 40px;
+    width: 85%;
+    height: auto;
+}
+
+/* Estilos para los contenidos */
+div {
+    padding: 10px;
+}
+
+h1 {
+    color: #992217;
+}
+
+/* tabla*/
+.tables{
+    align-content: center;
+}
+
+/* Estilos para la tabla de colaboradores */
+
+.team h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.team h3{
+    text-align: center;
+    color:#3d3b3b;
+    font-family:"Segoe UI" ;
+}
+
+.member{
+    display: inline-block;
+}
+
+.team .member-content{
+    border: 1px solid #ddd;
+    margin-top: 0;
+}
+
+.member-primary{
+    width: 25%;
+    margin: 50px 50px 0px 50px;
+}
+
+.member-secondary{
+    width: 25%;
+    margin: 25px 50px 0px 200px;
+}
+
+.team img {
+    width: 100%;
+  }
+  
+.member h4 {
+    font-weight: 700;
+    margin: 15px 0 8px 0;
+    font-size: 18px;
+  }
+  
+.member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #6c757d;
+  }
+  
+.member .social {
+    margin-top: 15px;
+  }
+  
+ .member .social a {
+    color:#921E13;
+    transition: 0.3s;
+  }
+  
+.member .social a:hover {
+    color:#c92b1c;
+  }
+  
+.member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+  }
+
+/* Estilos para sección de valores*/
+
+table, tr, th{
+    border: 0;
+}
+
+.tabla{
+    text-align: center;
+}
+
+.icons{
+    display: block;
+    text-align: center;
+    width: 150px;
+    margin-top: 10px;
+}
+
+/* Estilos para el pie de página */
+
+.pie-pagina{
+    width: 100%;
+    background-color: #921E13;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    padding: 45px 0;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+}
+
+.pie-pagina .grupo-1 .box .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #67231d;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.pie-pagina .grupo-1 .box .red-social a:hover{
+    background-color: #c1392c;
+}
+
+.pie-pagina .grupo-2{
+    background-color:#67231d;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.member{
+    text-align: center;
+}
+
+.photo{
+    text-align: center;
+}
+
+/* Scroll Top */
+
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: var(--color-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  
+  .scroll-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .scroll-top:hover {
+    background:#992217;
+    color: #fff;
+  }
+  
+  .scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+/* Responsive */
+
+@media screen and (max-width:800px){
+    
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
+
+    .pie-pagina .grupo-1 .box figure img{
+        width: 170px;
+    }
+
+}
+
+/* Misión y Visión */
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    margin-top: 50px;
+}
+
+.mision, .vision {
+    flex: 0 0 49%; /* ancho de cada sección */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mision-vision h2{
+    text-align: center;
+    color:#921E13;
+    margin-bottom: 10px;
+}
+
+.mision-vision p{
+    text-align: justify;
+    margin-left: 40px;
+    width: 85%;
+    height: auto;
+
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* ancho del video*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Valores */
+
+.valores {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.valores h2 {
+    color: #921E13;
+    margin-bottom: 30px;
+}
+
+.valores .valores-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* Estilos para cada valor individual */
+.valores .valor {
+    flex: 0 0 calc(33.33% - 20px); 
+    padding: 20px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.valores .valor:hover {
+    background-color: #E0E0E0;
+}
+
+.valores .valor img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.valores .valor h3 {
+    color: #333;
+    font-size: 20px;
+}
+
+.valores .valor p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Estilos específicos para cada posición */
+.valor-izquierda {
+    margin-right: auto; 
+}
+
+.valor-centro {
+    margin: 0 auto;
+}
+
+.valor-derecha {
+    margin-left: auto; 
+}
+
+/* Valores */
+
+.valores {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.valores .valores-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.valores .valor {
+    flex: 0 0 calc(33.33% - 20px); /* Ancho  de cada valor */
+    padding: 20px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.valores .valor:hover {
+    background-color: #E0E0E0;
+}
+
+.valores .valor img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.valores .valor h3 {
+    color: #333;
+    font-size: 20px;
+}
+
+.valores .valor p {
+    color: #666;
+    font-size: 16px;
+}
+
+/*  posición */
+.valor-izquierda {
+    margin-right: auto; 
+}
+
+.valor-centro {
+    margin: 0 auto; 
+}
+
+.valor-derecha {
+    margin-left: auto; 
+}
+
+.valor {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.valor h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.valor p {
+    font-size: 1rem;
+}
+
+.icono {
+    font-size: 3rem;
+    color: #921E13;
+    margin-bottom: 10px;
+}
